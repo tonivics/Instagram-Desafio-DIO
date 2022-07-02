@@ -2,4 +2,5 @@
 
 * Estilização feita com base no jogo Gwent
 * Adicionada imagem de fundo para a página
+
 #ContratoDeCompromisso
