@@ -15,9 +15,12 @@ body{
     padding: 0;
     display: flex;
     justify-content: center;
+    background-image: url('./img/gwent-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.instagram-wrapper{
+.instagwent-wrapper{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -25,13 +28,133 @@ body{
     height: 100vh;
 }
 
-.instagram-phone{
+.gwent-mobile{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.instagram-phone img{
-    height: 50rem;
+.gwent-mobile img{
+    height: 28rem;
+}
+
+.profile-photo{
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 5rem;
+}
+
+.instagwent-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid gold;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.gwent-logo{
+    height: 6rem;
+}
+
+.instagwent-login{
+    background-color: rgba(6, 100, 6, 0.61);
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagwent-remove{
+    color:rgba(6, 100, 6, 0.61);
+    margin-top: 1rem;
+}
+
+.get-app{
+    font-weight: bold;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.green-link{
+    color:rgba(6, 100, 6, 0.61);
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* Media Queries*/
+
+@media(max-width: 1024px){
+    .instagwent-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    .instagwent-wrapper{
+        width: 90%;
+    }
+
+    .gwent-mobile{
+        display: none;
+    }
+
+    .instagwent-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
 }
